@@ -1,0 +1,142 @@
+<html>
+<head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+           
+        }
+
+       
+        .container {
+            height: 100vh;
+            display: flex;
+        }
+
+        
+        .menu {
+            width: 5%;
+            background-color: gray;
+            padding: 10px;
+        }
+
+      
+        .left {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+
+      
+        .search {
+            height: 20%;
+            background-color: lightpink;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+
+        
+        .chats {
+            flex: 1;
+            min-height: 0;
+
+            background-color: white;
+            padding: 10px;
+
+            
+            overflow-y: auto;
+        }
+
+        .right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .contact {
+            height: 20%;
+            background-color: lightgreen;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+
+     
+        .messages {
+            flex: 1;
+            min-height: 0;
+
+            background-color: lightblue;
+            padding: 10px;
+
+         
+            overflow-y: auto;
+        }
+
+       
+        .type {
+            height: 50px;
+            background-color: hotpink;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+      
+        <div class="menu">
+            Menu
+        </div>
+
+    
+        <div class="left">
+
+            <div class="search">
+                Search
+            </div>
+
+            <div class="chats">
+                Chats
+
+              
+
+            </div>
+
+        </div>
+
+      
+        <div class="right">
+
+            <div class="contact">
+                Contact
+            </div>
+
+            <div class="messages">
+                Messages
+
+               
+
+            </div>
+
+            <div class="type">
+                Type
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
