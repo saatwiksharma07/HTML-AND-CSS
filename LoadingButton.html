@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames</title>
+</head>
+
+<style>
+
+    .container {
+        width: 400px;
+        margin: auto;
+        border: 2px solid navy;
+    }
+
+    .square {
+        width: 20px;
+        height: 20px;
+        background: red;
+        position: relative;
+
+        /* Animation paused initially */
+        animation: loading 4s 1 forwards;
+        animation-play-state: paused;
+    }
+
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    .load {
+        width: 400px;
+        margin: auto;
+    }
+
+    .check {
+        width: 400px;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    /* Start animation when checkbox is checked */
+    body:has(#start:checked) .square {
+        animation-play-state: running;
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="square"></div>
+    </div>
+
+    <div class="load">
+        Loading...
+    </div>
+
+    <div class="check">
+        <input type="checkbox" id="start">
+        <label for="start">Start Loading</label>
+    </div>
+
+</body>
+</html>
