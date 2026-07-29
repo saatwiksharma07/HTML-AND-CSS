@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conatiner{
+        width:400px;
+        margin:auto;
+        border:2px solid navy;
+    }
+    .square{
+        width:20px;
+        height:20px;
+        background: red;
+        position:relative;
+        animation:mymoves 5s 1;
+    }
+    @keyframes mymoves {
+        0% {left:0px;top:0px;}
+        25%{left:50px;top:0px;}
+        50%{left:100px;top:0px;}
+        75%{left: 250px;top:0px;}
+        100%{left:380px;top:0px;}
+    }
+    .load{
+        width:400px;
+        margin:auto;
+        
+    }
+</style>
+<body>
+    <div class="conatiner">
+        <div class="square"></div>
+
+    </div>
+    <div class="load">Loading....</div>
+</body>
+</html>
