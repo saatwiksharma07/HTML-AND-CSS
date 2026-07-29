@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .board-container {
+            width: 600px;
+        }
+
+        .chessboard {
+            width: 600px;
+            height: 600px;
+
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+
+            border: 2px solid black;
+            box-shadow: 10px 10px 10px grey;
+            box-sizing: border-box;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .checkbox-area {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .checkbox-area input[type="checkbox"] {
+            accent-color: green;
+            transform: scale(1.5);
+            margin-right: 10px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        .checkbox-area label {
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        /* Hide second label initially */
+        .label2 {
+            display: none;
+        }
+
+        /* Change board to circles with blue background */
+        /* Blue background */
+.board-container:has(#changeColor:checked) .chessboard{
+    background: dodgerblue;
+    padding: 0;
+    gap: 0;
+}
+
+/* Yellow circles */
+.board-container:has(#changeColor:checked) .white{
+    background: yellow;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Maroon circles */
+.board-container:has(#changeColor:checked) .black{
+    background: maroon;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+        /* Change label text */
+        .board-container:has(#changeColor:checked) .label1 {
+            display: none;
+        }
+
+        .board-container:has(#changeColor:checked) .label2 {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="board-container">
+
+        <div class="chessboard">
+
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+        </div>
+
+        <div class="checkbox-area">
+
+            <input type="checkbox" id="changeColor">
+
+            <label for="changeColor">
+                <span class="label1">Change Board Color</span>
+                <span class="label2">Change Shape &amp; Color</span>
+            </label>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
